@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jupyter-converter"
+version = "0.1.0"
+description = "Recursively convert Jupyter notebooks to HTML"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [
+  { name = "Mares Barekzai", email = "mares.barekzai@posteo.de" }
+]
+dependencies = []
+
+[project.scripts]
+jupyter-convert = "jupyter_converter.converter:main"
